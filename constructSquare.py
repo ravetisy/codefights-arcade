@@ -41,11 +41,11 @@ def isSqare(number):
     else:
         return False
 ############################## new optimized version ##################
-# its more optimized is we start to look for numbers already in square root range of possible soolutions, and if found, rise them to square.
+# its more optimized if we start to look for numbers already in square root range of possible solutions, and if found, rise them to square and check whether its the number we search..
 # and one more thing thats makes more easier the solution. In my first solution I considered the all permutations  of current string, that can make the number.
-# but this is not needed as we can assign any number to any letter, so the permutation doesnt matter any more. The only thing that matters, are the exact maaping 
-# and probable corresposndence of string to leteer. This means that we have to check weahter there are the same amount of chars<=>numbers in both string and number.
-# for examble 55687 = aabce, There is no need to check aabce aacbe aaebc versions, The have to only check that there is dsitinct 3 chars in letter and 3 distinct
+# but this is not needed as we can assign any number to any letter, so the permutation doesnt matter any more. The only thing that matters, are the exact mapping 
+# and probable corresposndence of string to letter. This means that we have to check whether there are the same amount of chars<=>numbers in both string and number.
+# for examble 55687 = aabce, There is no need to check aabce aacbe aaebc versions, we have to only check that there is distinct 3 chars in letter and 3 distinct
 # numbers in number.
 # So goes the solution.
 
